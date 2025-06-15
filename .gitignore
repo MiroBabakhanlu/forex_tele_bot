@@ -1,1 +1,16 @@
+# Root node_modules
+/node_modules
+
+# Server-specific
 /server/node_modules
+
+# Env files
+.env
+/server/.env
+
+# Logs
+*.log
+
+# Build artifacts
+/dist
+/build
