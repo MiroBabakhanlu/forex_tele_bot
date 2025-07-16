@@ -6,8 +6,8 @@
 /server/user_logsg
 
 # Env files
-.env
-/server/.env
+#.env
+#/server/.env
 
 # Logs
 *.log
