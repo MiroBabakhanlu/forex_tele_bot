@@ -1,0 +1,1146 @@
+2025-06-15T17:19:18.124Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-06-15T17:19:23.448Z - callback_query received
+Details: {"data":"technical_analysis"}
+
+2025-06-15T17:19:37.012Z - technical_analysis completed
+Details: {"output":"\r\n📊 تحلیل سیگنال در تاریخ 2025-06-13 23:45:00\r\nقیمت: 3432.56 | دامنه نوسان: 3.98\r\nاحتمال خرید: 62٪ | احتمال فروش: 25٪\r\n\r\n🧩 دلایل خرید:\r\n - 🟢 دلار ضعیف\r\n - 🟢 شاخص دلار در حال کاهش\r\n - 🟢 طلا در حال افزایش\r\n - 🟢 قیمت > میانگین متحرک\r\n - 🟢 USDCHF در حال کاهش → USD ضعیف → XAUUSD بالا\r\n\r\n🧩 دلایل فروش:\r\n - 🔴 مومنتوم منفی\r\n - 🔴 ROC منفی\r\n\r\n⚠️ هیچ سیگنال قوی یافت نشد.\r\n"}
+
+2025-06-15T17:19:49.607Z - callback_query received
+Details: {"data":"technical_analysis"}
+
+2025-06-15T17:19:51.382Z - technical_analysis completed
+Details: {"output":"\r\n📊 تحلیل سیگنال در تاریخ 2025-06-13 23:45:00\r\nقیمت: 3432.56 | دامنه نوسان: 3.98\r\nاحتمال خرید: 62٪ | احتمال فروش: 25٪\r\n\r\n🧩 دلایل خرید:\r\n - 🟢 دلار ضعیف\r\n - 🟢 شاخص دلار در حال کاهش\r\n - 🟢 طلا در حال افزایش\r\n - 🟢 قیمت > میانگین متحرک\r\n - 🟢 USDCHF در حال کاهش → USD ضعیف → XAUUSD بالا\r\n\r\n🧩 دلایل فروش:\r\n - 🔴 مومنتوم منفی\r\n - 🔴 ROC منفی\r\n\r\n⚠️ هیچ سیگنال قوی یافت نشد.\r\n"}
+
+2025-06-15T17:20:30.313Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-06-15T17:20:33.334Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-06-15T17:20:33.335Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-06-15T17:20:38.593Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-06-15T17:20:38.593Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-06-15T17:22:18.760Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-01T09:33:53.870Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-01T09:33:53.876Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-01T09:33:53.877Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-01T09:33:53.878Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-01T09:33:53.880Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-01T09:34:06.815Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-01T09:34:09.820Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-01T09:34:09.820Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-01T09:34:12.995Z - callback_query received
+Details: {"data":"period_tomorrow_high_USD"}
+
+2025-07-01T09:34:12.995Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"tomorrow","periodQuery":"?day=tomorrow"}
+
+2025-07-03T12:12:34.285Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T12:18:55.271Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T12:19:02.081Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T12:19:06.426Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T12:19:09.349Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T12:19:09.350Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T12:19:13.611Z - callback_query received
+Details: {"data":"period_nextmonth_high_USD"}
+
+2025-07-03T12:19:13.612Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"nextmonth","periodQuery":"?month=next"}
+
+2025-07-03T12:42:34.614Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T12:42:36.637Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T12:42:42.251Z - callback_query received
+Details: {"data":"currency_JPY"}
+
+2025-07-03T12:42:46.372Z - callback_query received
+Details: {"data":"impact_high_JPY"}
+
+2025-07-03T12:42:46.373Z - impact level selected
+Details: {"currency":"JPY","impact":"اثرگذاری زیاد"}
+
+2025-07-03T12:42:51.629Z - callback_query received
+Details: {"data":"period_nextmonth_high_JPY"}
+
+2025-07-03T12:42:51.630Z - period selected
+Details: {"currency":"JPY","impact":"انتظار تأثیر بالا","period":"nextmonth","periodQuery":"?month=ماه_بعد"}
+
+2025-07-03T12:43:24.392Z - callback_query received
+Details: {"data":"impact_medium_JPY"}
+
+2025-07-03T12:43:24.392Z - impact level selected
+Details: {"currency":"JPY","impact":"اثرگذاری متوسط"}
+
+2025-07-03T12:43:28.041Z - callback_query received
+Details: {"data":"period_thismonth_medium_JPY"}
+
+2025-07-03T12:43:28.041Z - period selected
+Details: {"currency":"JPY","impact":"انتظار تأثیر متوسط","period":"thismonth","periodQuery":"?month=این_ماه"}
+
+2025-07-03T12:43:47.830Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T12:43:51.088Z - callback_query received
+Details: {"data":"impact_medium_USD"}
+
+2025-07-03T12:43:51.089Z - impact level selected
+Details: {"currency":"USD","impact":"اثرگذاری متوسط"}
+
+2025-07-03T12:43:54.649Z - callback_query received
+Details: {"data":"period_thismonth_medium_USD"}
+
+2025-07-03T12:43:54.650Z - period selected
+Details: {"currency":"USD","impact":"انتظار تأثیر متوسط","period":"thismonth","periodQuery":"?month=این_ماه"}
+
+2025-07-03T12:44:11.545Z - callback_query received
+Details: {"data":"period_nextmonth_medium_USD"}
+
+2025-07-03T12:44:11.545Z - period selected
+Details: {"currency":"USD","impact":"انتظار تأثیر متوسط","period":"nextmonth","periodQuery":"?month=ماه_بعد"}
+
+2025-07-03T12:44:40.155Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T12:44:42.093Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T12:44:44.267Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T12:44:46.586Z - callback_query received
+Details: {"data":"impact_medium_USD"}
+
+2025-07-03T12:44:46.588Z - impact level selected
+Details: {"currency":"USD","impact":"اثرگذاری متوسط"}
+
+2025-07-03T12:44:48.482Z - callback_query received
+Details: {"data":"period_nextmonth_medium_USD"}
+
+2025-07-03T12:44:48.483Z - period selected
+Details: {"currency":"USD","impact":"انتظار تأثیر متوسط","period":"nextmonth","periodQuery":"?month=ماه_بعد"}
+
+2025-07-03T12:45:19.886Z - callback_query received
+Details: {"data":"period_today_medium_USD"}
+
+2025-07-03T12:45:19.887Z - period selected
+Details: {"currency":"USD","impact":"انتظار تأثیر متوسط","period":"today","periodQuery":"?day=امروز"}
+
+2025-07-03T12:46:12.971Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T12:46:14.600Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T12:46:16.494Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T12:46:16.495Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T12:46:20.061Z - callback_query received
+Details: {"data":"period_nextmonth_high_USD"}
+
+2025-07-03T12:46:20.063Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"nextmonth","periodQuery":"?month=next"}
+
+2025-07-03T12:46:36.976Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T12:46:36.977Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T12:49:06.823Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T12:49:16.255Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T12:49:19.361Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T12:49:20.782Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T12:49:20.782Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T12:49:22.222Z - callback_query received
+Details: {"data":"period_nextmonth_high_USD"}
+
+2025-07-03T12:49:22.224Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"nextmonth","periodQuery":"?month=next"}
+
+2025-07-03T12:49:35.609Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T12:49:35.609Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T12:57:44.407Z - دستور /start دریافت شد
+Details: {"firstName":"Miro"}
+
+2025-07-03T12:57:49.591Z - کوئری دریافت شد
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T12:57:52.529Z - کوئری دریافت شد
+Details: {"data":"currency_USD"}
+
+2025-07-03T12:58:23.015Z - کوئری دریافت شد
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T12:58:23.015Z - سطح تاثیر انتخاب شد
+Details: {"currency":"USD","impact":"تاثیر بالا"}
+
+2025-07-03T12:58:23.017Z - کوئری دریافت شد
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T12:58:23.017Z - سطح تاثیر انتخاب شد
+Details: {"currency":"USD","impact":"تاثیر بالا"}
+
+2025-07-03T12:58:30.852Z - کوئری دریافت شد
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T12:58:30.853Z - دوره زمانی انتخاب شد
+Details: {"currency":"USD","impact":"تاثیر بالا","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T12:58:58.340Z - کوئری دریافت شد
+Details: {"data":"period_nextmonth_high_USD"}
+
+2025-07-03T12:58:58.340Z - دوره زمانی انتخاب شد
+Details: {"currency":"USD","impact":"تاثیر بالا","period":"nextmonth","periodQuery":"?month=next"}
+
+2025-07-03T13:35:32.418Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T13:35:35.442Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T13:35:37.559Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T13:35:39.234Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T13:35:39.235Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T13:35:41.475Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T13:35:41.475Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T13:42:18.307Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T13:42:26.172Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T13:42:48.929Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T13:43:48.296Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T13:43:48.297Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T13:43:50.473Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T13:43:50.473Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:03:08.597Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:03:10.060Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:03:11.551Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:03:13.056Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:03:13.057Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:03:17.853Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T14:03:17.854Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:10:50.512Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:10:55.787Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:11:11.275Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:11:14.430Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:11:14.431Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:11:17.863Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T14:11:17.864Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:12:47.953Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:13:49.709Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:13:49.712Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:13:49.714Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:13:49.715Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:13:53.609Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:13:56.267Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:13:56.267Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:13:58.583Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T14:13:58.584Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:14:24.090Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:14:26.139Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:14:27.955Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:14:29.566Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:14:29.567Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:14:35.121Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T14:14:35.121Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:17:45.731Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:17:48.183Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:17:51.472Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:17:53.610Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:17:53.610Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:17:55.021Z - callback_query received
+Details: {"data":"period_yesterday_high_USD"}
+
+2025-07-03T14:17:55.022Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"yesterday","periodQuery":"?day=yesterday"}
+
+2025-07-03T14:18:50.662Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:18:52.670Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:19:24.016Z - callback_query received
+Details: {"data":"currency_AUD"}
+
+2025-07-03T14:19:28.779Z - callback_query received
+Details: {"data":"impact_high_AUD"}
+
+2025-07-03T14:19:28.780Z - impact level selected
+Details: {"currency":"AUD","impact":"High Impact Expected"}
+
+2025-07-03T14:19:31.328Z - callback_query received
+Details: {"data":"period_lastweek_high_AUD"}
+
+2025-07-03T14:19:31.328Z - period selected
+Details: {"currency":"AUD","impact":"High Impact Expected","period":"lastweek","periodQuery":"?week=last"}
+
+2025-07-03T14:19:56.718Z - callback_query received
+Details: {"data":"period_nextmonth_high_AUD"}
+
+2025-07-03T14:19:56.719Z - period selected
+Details: {"currency":"AUD","impact":"High Impact Expected","period":"nextmonth","periodQuery":"?month=next"}
+
+2025-07-03T14:20:52.069Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:20:55.382Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:20:55.383Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:21:00.171Z - callback_query received
+Details: {"data":"period_nextmonth_high_USD"}
+
+2025-07-03T14:21:00.171Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"nextmonth","periodQuery":"?month=next"}
+
+2025-07-03T14:21:23.369Z - callback_query received
+Details: {"data":"period_lastmonth_high_USD"}
+
+2025-07-03T14:21:23.370Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"lastmonth","periodQuery":"?month=last"}
+
+2025-07-03T14:33:59.122Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:34:17.486Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:34:19.745Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:34:21.515Z - callback_query received
+Details: {"data":"impact_medium_USD"}
+
+2025-07-03T14:34:21.516Z - impact level selected
+Details: {"currency":"USD","impact":"Medium Impact Expected"}
+
+2025-07-03T14:34:24.032Z - callback_query received
+Details: {"data":"period_thismonth_medium_USD"}
+
+2025-07-03T14:34:24.032Z - period selected
+Details: {"currency":"USD","impact":"Medium Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:36:28.427Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:36:31.037Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:36:33.508Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:36:35.518Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:36:35.518Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:36:37.844Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T14:36:37.845Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:46:34.827Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:46:36.410Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:46:38.431Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:46:40.236Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:46:40.237Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:46:42.628Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T14:46:42.629Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T14:47:08.763Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T14:47:10.298Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T14:47:12.185Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T14:47:13.780Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T14:47:13.780Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T14:47:15.429Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T14:47:15.430Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T15:00:32.658Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T15:00:36.332Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T15:00:39.990Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T15:00:41.966Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T15:00:41.967Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T15:00:44.244Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T15:00:44.245Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T15:01:50.531Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T15:01:50.533Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T15:02:24.067Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T15:02:25.814Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T15:02:27.334Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T15:02:28.831Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T15:02:28.832Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T15:02:30.641Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T15:02:30.642Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T15:03:15.842Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T15:03:17.293Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T15:03:18.994Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T15:03:20.621Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T15:03:20.621Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T15:03:22.215Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T15:03:22.216Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T15:03:59.743Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T15:04:01.507Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-03T15:04:03.551Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T15:04:05.244Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T15:04:05.245Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T15:04:08.399Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T15:04:08.399Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-03T15:08:37.869Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-03T15:08:40.303Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-03T15:08:45.349Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-03T15:08:45.349Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-03T15:08:47.518Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-03T15:08:47.519Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T11:21:45.272Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T11:21:57.473Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T11:21:58.814Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T11:22:03.692Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T11:22:05.938Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T11:22:05.938Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T11:22:07.864Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T11:22:07.865Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T11:36:32.536Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T11:36:32.539Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T11:36:35.081Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T11:36:37.587Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T11:36:40.051Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T11:36:40.052Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T11:36:41.839Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T11:36:41.839Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T12:40:58.277Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T12:40:59.683Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T12:41:01.153Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T12:41:02.798Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T12:41:02.799Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T12:41:04.810Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T12:41:04.811Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T12:44:17.815Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T12:44:20.380Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T12:44:21.867Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T12:44:23.907Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T12:44:23.907Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T12:44:25.876Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T12:44:25.876Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T12:44:53.032Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T12:44:53.035Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T12:44:58.125Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T12:44:58.127Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T12:52:44.209Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T12:52:45.596Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T12:52:47.750Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T12:52:49.293Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T12:52:49.293Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T12:52:52.336Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T12:52:52.336Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T12:53:20.123Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T12:53:22.252Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T12:53:25.475Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T12:53:25.476Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T12:53:29.768Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T12:53:29.768Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth"}
+
+2025-07-04T12:59:28.065Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T12:59:29.689Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T12:59:31.016Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T12:59:31.016Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T12:59:33.262Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T12:59:33.263Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth"}
+
+2025-07-04T13:00:48.361Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:00:49.788Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:00:51.056Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:00:51.057Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:00:53.006Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:00:53.007Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:03:54.364Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:03:55.706Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:03:57.080Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:03:57.081Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:03:59.026Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:03:59.027Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:12:03.152Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:12:05.591Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:12:07.058Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:12:07.059Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:12:08.970Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:12:08.970Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:13:17.093Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:13:18.679Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:13:20.744Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:13:20.744Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:13:26.903Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:13:26.903Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:20:33.017Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:20:34.459Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:20:36.007Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:20:41.499Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:20:41.500Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:20:46.776Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:20:46.777Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:21:36.464Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:21:38.098Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:21:39.673Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:21:39.674Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:21:41.502Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:21:41.503Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:22:41.476Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:22:43.799Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:22:45.412Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:22:45.413Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:22:47.041Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:22:47.042Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:23:39.206Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:23:43.987Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:23:45.315Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:23:45.315Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:23:47.963Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:23:47.963Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:25:09.136Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:25:10.737Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:25:12.263Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:25:12.263Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:25:13.899Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:25:13.899Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:26:20.058Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:26:21.485Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:26:22.851Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:26:22.852Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:26:24.467Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:26:24.467Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:35:10.010Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:35:11.787Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:35:14.607Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:35:16.237Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:35:16.238Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:35:17.811Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:35:17.812Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:36:16.770Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:36:57.017Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:36:57.020Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:37:00.954Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:37:02.551Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:37:04.201Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:37:05.929Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:37:05.929Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:37:09.063Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:37:09.064Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:37:44.222Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:37:45.691Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:37:47.646Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:37:52.631Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:37:52.631Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:37:54.474Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:37:54.474Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:39:20.907Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:39:22.852Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:39:24.763Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:39:24.764Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:39:26.811Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:39:26.812Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:47:23.406Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:47:24.747Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:47:26.374Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:47:27.765Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:47:27.766Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:47:29.243Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:47:29.243Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:50:59.349Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:51:03.285Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:51:05.279Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:51:06.820Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:51:06.820Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:51:08.285Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:51:08.286Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+
+2025-07-04T13:51:57.811Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:55:06.323Z - /start command received
+Details: {"firstName":"Miro"}
+
+2025-07-04T13:55:07.710Z - callback_query received
+Details: {"data":"fundamental_analysis"}
+
+2025-07-04T13:55:09.285Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-04T13:55:10.696Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-04T13:55:10.696Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-04T13:55:12.044Z - callback_query received
+Details: {"data":"period_thismonth_high_USD"}
+
+2025-07-04T13:55:12.045Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"thismonth","periodQuery":"?month=this"}
+

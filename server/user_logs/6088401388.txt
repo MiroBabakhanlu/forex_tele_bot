@@ -1,0 +1,8 @@
+[2025-06-15T13:44:39.327Z] @Menooas: Started bot interaction
+[2025-06-15T13:44:41.189Z] @Menooas: technical_analysis
+[2025-06-15T13:44:49.121Z] @Menooas: currency_JPY
+[2025-06-15T13:44:51.209Z] @Menooas: impact_high_JPY
+[2025-06-15T13:44:59.619Z] @Menooas: period_nextweek_high_JPY
+[2025-06-15T13:45:00.031Z] @Menooas: Requested forex data: JPY High Impact Expected ?week=next
+[2025-06-15T13:45:01.037Z] @Menooas: period_nextmonth_high_JPY
+[2025-06-15T13:45:01.445Z] @Menooas: Requested forex data: JPY High Impact Expected ?month=next

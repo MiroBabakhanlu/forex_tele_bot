@@ -1,0 +1,6 @@
+[2025-06-15T13:44:48.456Z] @miro1384: Started bot interaction
+[2025-06-15T13:44:53.471Z] @miro1384: currency_USD
+[2025-06-15T13:44:55.334Z] @miro1384: technical_analysis
+[2025-06-15T13:45:29.100Z] @miro1384: Started bot interaction
+[2025-06-15T13:45:31.341Z] @miro1384: currency_USD
+[2025-06-15T13:45:33.390Z] @miro1384: technical_analysis

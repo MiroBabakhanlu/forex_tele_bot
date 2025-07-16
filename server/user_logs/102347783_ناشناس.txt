@@ -1,0 +1,6 @@
+2025-07-03T12:58:41.019Z - اطلاعات فارکس دریافت شد
+Details: {"currency":"USD","impactLevel":"تاثیر بالا","periodQuery":"?month=this","eventCount":0}
+
+2025-07-03T12:59:15.495Z - اطلاعات فارکس دریافت شد
+Details: {"currency":"USD","impactLevel":"تاثیر بالا","periodQuery":"?month=next","eventCount":0}
+

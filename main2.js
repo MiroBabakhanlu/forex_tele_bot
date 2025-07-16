@@ -215,140 +215,9 @@ bot.on('callback_query', async (callbackQuery) => {
   }
 });
 
-async function getForexFactoryData(impactLevel = 'High Impact Expected', selectedCurrency, periodQuery = '') {
-  let browser;
-  let proxyUrl = null;
-  let newProxyUrl = null;
-  
-  try {
-    // Get a random proxy if available
-    const randomProxy = getRandomProxy();
-    if (randomProxy) {
-      proxyUrl = randomProxy;
-      newProxyUrl = await proxyChain.anonymizeProxy(proxyUrl);
-    }
-
-    // Random delay between 1-5 seconds
-    const randomDelay = Math.floor(Math.random() * 4000) + 1000;
-    console.log(randomDelay, 'ms delay before launching browser');
-    await delay(randomDelay);
-
-    // Get a random user agent
-    const randomAgent = randomUseragent.getRandom();
-    console.log('Using random user agent:', randomAgent);
-
-    const browserOptions = {
-      headless: true,
-      executablePath: CHROME_PATH,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage'
-      ]
-    };
-
-    // Add proxy if available
-    if (newProxyUrl) {
-      browserOptions.args.push(`--proxy-server=${newProxyUrl}`);
-    }
-
-    browser = await puppeteer.launch(browserOptions);
-
-    const page = await browser.newPage();
-    
-    // Set random user agent
-    await page.setUserAgent(randomAgent);
-    
-    // Set viewport to look more like a real user
-    await page.setViewport({
-      width: 1280 + Math.floor(Math.random() * 100),
-      height: 800 + Math.floor(Math.random() * 100),
-      deviceScaleFactor: 1,
-      hasTouch: Math.random() > 0.5,
-      isLandscape: Math.random() > 0.5
-    });
-
-    // Enable stealth mode with more human-like behavior
-    await page.evaluateOnNewDocument(() => {
-      Object.defineProperty(navigator, 'webdriver', {
-        get: () => false,
-      });
-    });
-
-    const url = `https://www.forexfactory.com/calendar${periodQuery}`;
-    
-    // Random navigation delay
-    await delay(Math.floor(Math.random() * 3000));
-    
-    await page.goto(url, { 
-      waitUntil: 'networkidle2',
-      timeout: 60000 
-    });
-    
-    // Random delay before interacting with the page
-    await delay(Math.floor(Math.random() * 2000) + 1000);
-    
-    await page.waitForSelector('tr.calendar__row[data-event-id]', { timeout: 30000 });
-
-    // Trigger auto-scroll to load lazy events
-    await autoScroll(page);
-
-    // Optional extra wait for JS to finish loading all data
-    await delay(1000);
-
-    const { week, events } = await page.evaluate(() => {
-      const rows = Array.from(document.querySelectorAll('tr.calendar__row[data-event-id]'));
-      let lastDate = '';
-      
-      const evts = rows.map(row => {
-        const getText = sel => row.querySelector(sel)?.textContent.trim() || '';
-        const impactEl = row.querySelector('.calendar__impact span');
-        
-        // Get date and handle missing values
-        const date = getText('.calendar__date span:last-child');
-        if (date) lastDate = date;
-
-        return {
-          date: lastDate, // Use the last known date if missing
-          time: getText('.calendar__time span'),
-          currency: getText('.calendar__currency'),
-          impact: impactEl?.getAttribute('title') || 'No Impact',
-          event: getText('.calendar__event-title'),
-          actual: getText('.calendar__actual') || 'N/A',
-          forecast: getText('.calendar__forecast') || 'N/A',
-          previous: getText('.calendar__previous') || 'N/A'
-        };
-      });
-
-      const weekLabel = document.querySelector('.calendar__options h2 span')?.textContent.trim() || '';
-      return { week: weekLabel, events: evts };
-    });
-
-    const filteredEvents = events.filter(event =>
-      event.impact === impactLevel &&
-      event.currency === selectedCurrency
-    );
-
-    return {
-      source: 'Forex Factory',
-      week,
-      count: filteredEvents.length,
-      events: filteredEvents
-    };
-
-  } catch (err) {
-    console.error('Puppeteer scrape error:', err);
-    throw err;
-  } finally {
-    if (browser) await browser.close();
-    if (newProxyUrl) await proxyChain.closeAnonymizedProxy(newProxyUrl, true);
-  }
-}
-
-
 async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery = '') {
   try {
-    const username = 'unknown';
+    const username = 'unknown'; // In a real scenario, you'd get this from context
     const loadingMsg = await bot.sendMessage(chatId, `در حال دریافت رویدادهای ${impactLevel} برای ${selectedCurrency}...`);
     const forexData = await getForexFactoryData(impactLevel, selectedCurrency, periodQuery);
 
@@ -358,26 +227,9 @@ async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery 
     if (forexData.events.length === 0) {
       response += `هیچ رویدادی برای معیارهای انتخاب شده یافت نشد.`;
     } else {
-      let currentDate = '';
       for (const event of forexData.events) {
-        // Only show date when it changes
-        if (event.date && event.date !== currentDate) {
-          response += `\n🗓 *${event.date}*\n`;
-          currentDate = event.date;
-        }
-        
-        // Build event line
-        let eventLine = '';
-        if (event.time) {
-          eventLine += `⏰ ${event.time} `;
-        }
-        eventLine += `(${event.currency}) `;
-        eventLine += `📌 ${await translateText(event.event)}\n`;
-        
-        // Add event details
-        eventLine += `🔢 مقدار واقعی: ${event.actual} | پیش‌بینی: ${event.forecast} | قبلی: ${event.previous}\n\n`;
-        
-        response += eventLine;
+        response += `⏰ *${event.time}* (${event.currency})\n`;
+        response += `🔢 مقدار واقعی: ${event.actual} | پیش‌بینی: ${event.forecast} | قبلی: ${event.previous}\n\n`;
       }
     }
 
@@ -396,7 +248,7 @@ async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery 
     });
 
   } catch (error) {
-    const username = 'unknown';
+    const username = 'unknown'; // In a real scenario, you'd get this from context
     bot.sendMessage(chatId, `خطا در دریافت اطلاعات: ${error.message}`);
     
     // Log error
@@ -409,7 +261,6 @@ async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery 
   }
 }
 
-
 // Helper function for translation
 async function translateText(text) {
   try {
@@ -420,25 +271,6 @@ async function translateText(text) {
     console.error('Translation error:', error);
     return text;
   }
-}
-
-// Auto-scroll function to load all data
-async function autoScroll(page) {
-  await page.evaluate(async () => {
-    await new Promise((resolve) => {
-      let totalHeight = 0;
-      const distance = 200;
-      const timer = setInterval(() => {
-        window.scrollBy(0, distance);
-        totalHeight += distance;
-
-        if (totalHeight >= document.body.scrollHeight) {
-          clearInterval(timer);
-          resolve();
-        }
-      }, 100);
-    });
-  });
 }
 
 async function getForexFactoryData(impactLevel = 'High Impact Expected', selectedCurrency, periodQuery = '') {
@@ -515,12 +347,6 @@ async function getForexFactoryData(impactLevel = 'High Impact Expected', selecte
     await delay(Math.floor(Math.random() * 2000) + 1000);
     
     await page.waitForSelector('tr.calendar__row[data-event-id]', { timeout: 30000 });
-
-    // Trigger auto-scroll to load lazy events
-    await autoScroll(page);
-
-    // Optional extra wait for JS to finish loading all data
-    await delay(1000);
 
     const { week, events } = await page.evaluate(() => {
       const rows = Array.from(document.querySelectorAll('tr.calendar__row[data-event-id]'));

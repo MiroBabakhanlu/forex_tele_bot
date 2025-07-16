@@ -1,0 +1,3 @@
+2025-07-03T14:11:22.768Z - scrape details
+Details: {"delay_ms":4659,"user_agent":"Mozilla/5.0 (Windows NT 10.0; rv:45.9) Gecko/20100101 Goanna/3.2 Firefox/45.9 PaleMoon/27.4.0","proxy":"http://113.172.105.204:80","impactLevel":"High Impact Expected","selectedCurrency":"USD","periodQuery":"?month=this"}
+

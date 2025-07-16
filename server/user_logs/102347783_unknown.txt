@@ -1,0 +1,165 @@
+2025-06-15T17:20:57.657Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":2}
+
+2025-07-01T09:34:40.865Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?day=tomorrow","eventCount":1}
+
+2025-07-03T12:19:34.784Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=next","eventCount":4}
+
+2025-07-03T12:43:15.054Z - forex data retrieved
+Details: {"currency":"JPY","impactLevel":"انتظار تأثیر بالا","periodQuery":"?month=ماه_بعد","eventCount":0}
+
+2025-07-03T12:43:42.243Z - forex data retrieved
+Details: {"currency":"JPY","impactLevel":"انتظار تأثیر متوسط","periodQuery":"?month=این_ماه","eventCount":0}
+
+2025-07-03T12:44:07.652Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"انتظار تأثیر متوسط","periodQuery":"?month=این_ماه","eventCount":0}
+
+2025-07-03T12:44:27.028Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"انتظار تأثیر متوسط","periodQuery":"?month=ماه_بعد","eventCount":0}
+
+2025-07-03T12:45:07.875Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"انتظار تأثیر متوسط","periodQuery":"?month=ماه_بعد","eventCount":0}
+
+2025-07-03T12:45:31.656Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"انتظار تأثیر متوسط","periodQuery":"?day=امروز","eventCount":0}
+
+2025-07-03T12:46:28.559Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=next","eventCount":4}
+
+2025-07-03T12:46:50.598Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":7}
+
+2025-07-03T12:49:30.552Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=next","eventCount":4}
+
+2025-07-03T12:49:48.457Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":7}
+
+2025-07-03T13:35:41.809Z - forex data error
+Details: {"error":"delay is not a function","currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this"}
+
+2025-07-03T13:44:13.710Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-03T14:03:46.366Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":7}
+
+2025-07-03T14:11:27.940Z - forex data error
+Details: {"error":"net::ERR_TUNNEL_CONNECTION_FAILED at https://www.forexfactory.com/calendar?month=this","currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this"}
+
+2025-07-03T14:14:03.878Z - forex data error
+Details: {"error":"net::ERR_TUNNEL_CONNECTION_FAILED at https://www.forexfactory.com/calendar?month=this","currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this"}
+
+2025-07-03T14:14:51.818Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":7}
+
+2025-07-03T14:18:13.901Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?day=yesterday","eventCount":1}
+
+2025-07-03T14:19:48.388Z - forex data retrieved
+Details: {"currency":"AUD","impactLevel":"High Impact Expected","periodQuery":"?week=last","eventCount":0}
+
+2025-07-03T14:20:34.158Z - forex data error
+Details: {"error":"Waiting for selector `tr.calendar__row[data-event-id]` failed: Waiting failed: 30000ms exceeded","currency":"AUD","impactLevel":"High Impact Expected","periodQuery":"?month=next"}
+
+2025-07-03T14:21:15.730Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=next","eventCount":4}
+
+2025-07-03T14:21:48.459Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=last","eventCount":2}
+
+2025-07-03T14:34:45.096Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"Medium Impact Expected","periodQuery":"?month=this","eventCount":2}
+
+2025-07-03T14:36:53.988Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":7}
+
+2025-07-03T14:47:38.619Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":7}
+
+2025-07-03T15:01:18.522Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-03T15:02:08.143Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-03T15:03:09.375Z - forex data error
+Details: {"error":"Waiting for selector `tr.calendar__row[data-event-id]` failed: Waiting failed: 30000ms exceeded","currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this"}
+
+2025-07-03T15:03:37.131Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-03T15:04:46.203Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-03T15:09:03.660Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-04T11:22:30.129Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-04T11:36:56.703Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":5}
+
+2025-07-04T12:41:28.871Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-04T12:45:22.334Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-04T12:53:41.744Z - forex data error
+Details: {"error":"selectedCurrency is not defined","currency":"USD","impactLevel":"High Impact Expected","period":"thismonth"}
+
+2025-07-04T13:00:15.481Z - forex data error
+Details: {"error":"Waiting for selector `.calendar__filters.highlighted` failed: Waiting failed: 30000ms exceeded","currency":"USD","impactLevel":"high","period":"thismonth"}
+
+2025-07-04T13:01:13.901Z - forex data error
+Details: {"error":"Node is either not clickable or not an Element","currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this"}
+
+2025-07-04T13:04:20.000Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-04T13:12:22.937Z - forex data error
+Details: {"error":"page.waitForTimeout is not a function","currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this"}
+
+2025-07-04T13:13:54.700Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:21:15.424Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-04T13:22:04.694Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:23:11.650Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:24:11.972Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:25:38.736Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:27:00.324Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:36:41.919Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":7}
+
+2025-07-04T13:38:13.863Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":3}
+
+2025-07-04T13:39:55.249Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:48:08.074Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:51:57.826Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+
+2025-07-04T13:55:41.670Z - forex data retrieved
+Details: {"currency":"USD","impactLevel":"High Impact Expected","periodQuery":"?month=this","eventCount":30}
+

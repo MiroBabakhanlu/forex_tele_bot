@@ -5,10 +5,6 @@ const { exec } = require('child_process');
 const translate = require('@vitalets/google-translate-api').translate;
 const fs = require('fs');
 const path = require('path');
-const userAgent = require('user-agents');
-const proxyChain = require('proxy-chain');
-const {default: delay} = require('delay');
-const randomUseragent = require('random-useragent');
 require('dotenv').config();
 
 const app = express();
@@ -17,7 +13,6 @@ const PORT = 8080;
 // Configuration
 const CHROME_PATH = process.env.CHROME_PATH;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const PROXY_LIST = process.env.PROXY_LIST ? process.env.PROXY_LIST.split(',') : [];
 
 // Initialize Telegram Bot
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
@@ -28,13 +23,6 @@ const currencies = ['USD', 'EUR', 'GBP', 'JPY', 'AUD', 'CAD', 'CHF', 'NZD'];
 const userLogsDir = path.join(__dirname, 'user_logs');
 if (!fs.existsSync(userLogsDir)) {
   fs.mkdirSync(userLogsDir);
-}
-
-// Helper function to get a random proxy
-function getRandomProxy() {
-  if (PROXY_LIST.length === 0) return null;
-  const randomIndex = Math.floor(Math.random() * PROXY_LIST.length);
-  return PROXY_LIST[randomIndex];
 }
 
 // Helper function to log user activity
@@ -65,10 +53,10 @@ bot.onText(/\/start/, (msg) => {
   const opts = {
     reply_markup: {
       inline_keyboard: [
-        [{
-          text: 'تحلیل فاندامنتال',
-          callback_data: 'fundamental_analysis'
-        }],
+        ...currencies.map(curr => [{
+          text: curr,
+          callback_data: `currency_${curr}`
+        }]),
         [{
           text: 'تحلیل تکنیکال',
           callback_data: 'technical_analysis'
@@ -76,10 +64,10 @@ bot.onText(/\/start/, (msg) => {
       ]
     }
   };
-  bot.sendMessage(chatId, 'لطفا نوع تحلیل را انتخاب کنید:', opts);
+  bot.sendMessage(chatId, 'یک ارز یا تحلیل تکنیکال را انتخاب کنید:', opts);
 });
 
-// Handle callback queries
+// Handle technical analysis option
 bot.on('callback_query', async (callbackQuery) => {
   const chatId = callbackQuery.message.chat.id;
   const username = callbackQuery.from.username || 'anonymous';
@@ -120,19 +108,6 @@ bot.on('callback_query', async (callbackQuery) => {
         message_id: loadingMsg.message_id
       });
     });
-  } else if (data === 'fundamental_analysis') {
-    // Show currency selection for fundamental analysis
-    const opts = {
-      reply_markup: {
-        inline_keyboard: [
-          ...currencies.map(curr => [{
-            text: curr,
-            callback_data: `currency_${curr}`
-          }])
-        ]
-      }
-    };
-    bot.sendMessage(chatId, 'یک ارز را برای تحلیل فاندامنتال انتخاب کنید:', opts);
   } else if (data.startsWith('currency_')) {
     const currency = data.split('_')[1];
     const opts = {
@@ -215,140 +190,9 @@ bot.on('callback_query', async (callbackQuery) => {
   }
 });
 
-async function getForexFactoryData(impactLevel = 'High Impact Expected', selectedCurrency, periodQuery = '') {
-  let browser;
-  let proxyUrl = null;
-  let newProxyUrl = null;
-  
-  try {
-    // Get a random proxy if available
-    const randomProxy = getRandomProxy();
-    if (randomProxy) {
-      proxyUrl = randomProxy;
-      newProxyUrl = await proxyChain.anonymizeProxy(proxyUrl);
-    }
-
-    // Random delay between 1-5 seconds
-    const randomDelay = Math.floor(Math.random() * 4000) + 1000;
-    console.log(randomDelay, 'ms delay before launching browser');
-    await delay(randomDelay);
-
-    // Get a random user agent
-    const randomAgent = randomUseragent.getRandom();
-    console.log('Using random user agent:', randomAgent);
-
-    const browserOptions = {
-      headless: true,
-      executablePath: CHROME_PATH,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage'
-      ]
-    };
-
-    // Add proxy if available
-    if (newProxyUrl) {
-      browserOptions.args.push(`--proxy-server=${newProxyUrl}`);
-    }
-
-    browser = await puppeteer.launch(browserOptions);
-
-    const page = await browser.newPage();
-    
-    // Set random user agent
-    await page.setUserAgent(randomAgent);
-    
-    // Set viewport to look more like a real user
-    await page.setViewport({
-      width: 1280 + Math.floor(Math.random() * 100),
-      height: 800 + Math.floor(Math.random() * 100),
-      deviceScaleFactor: 1,
-      hasTouch: Math.random() > 0.5,
-      isLandscape: Math.random() > 0.5
-    });
-
-    // Enable stealth mode with more human-like behavior
-    await page.evaluateOnNewDocument(() => {
-      Object.defineProperty(navigator, 'webdriver', {
-        get: () => false,
-      });
-    });
-
-    const url = `https://www.forexfactory.com/calendar${periodQuery}`;
-    
-    // Random navigation delay
-    await delay(Math.floor(Math.random() * 3000));
-    
-    await page.goto(url, { 
-      waitUntil: 'networkidle2',
-      timeout: 60000 
-    });
-    
-    // Random delay before interacting with the page
-    await delay(Math.floor(Math.random() * 2000) + 1000);
-    
-    await page.waitForSelector('tr.calendar__row[data-event-id]', { timeout: 30000 });
-
-    // Trigger auto-scroll to load lazy events
-    await autoScroll(page);
-
-    // Optional extra wait for JS to finish loading all data
-    await delay(1000);
-
-    const { week, events } = await page.evaluate(() => {
-      const rows = Array.from(document.querySelectorAll('tr.calendar__row[data-event-id]'));
-      let lastDate = '';
-      
-      const evts = rows.map(row => {
-        const getText = sel => row.querySelector(sel)?.textContent.trim() || '';
-        const impactEl = row.querySelector('.calendar__impact span');
-        
-        // Get date and handle missing values
-        const date = getText('.calendar__date span:last-child');
-        if (date) lastDate = date;
-
-        return {
-          date: lastDate, // Use the last known date if missing
-          time: getText('.calendar__time span'),
-          currency: getText('.calendar__currency'),
-          impact: impactEl?.getAttribute('title') || 'No Impact',
-          event: getText('.calendar__event-title'),
-          actual: getText('.calendar__actual') || 'N/A',
-          forecast: getText('.calendar__forecast') || 'N/A',
-          previous: getText('.calendar__previous') || 'N/A'
-        };
-      });
-
-      const weekLabel = document.querySelector('.calendar__options h2 span')?.textContent.trim() || '';
-      return { week: weekLabel, events: evts };
-    });
-
-    const filteredEvents = events.filter(event =>
-      event.impact === impactLevel &&
-      event.currency === selectedCurrency
-    );
-
-    return {
-      source: 'Forex Factory',
-      week,
-      count: filteredEvents.length,
-      events: filteredEvents
-    };
-
-  } catch (err) {
-    console.error('Puppeteer scrape error:', err);
-    throw err;
-  } finally {
-    if (browser) await browser.close();
-    if (newProxyUrl) await proxyChain.closeAnonymizedProxy(newProxyUrl, true);
-  }
-}
-
-
 async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery = '') {
   try {
-    const username = 'unknown';
+    const username = 'unknown'; // In a real scenario, you'd get this from context
     const loadingMsg = await bot.sendMessage(chatId, `در حال دریافت رویدادهای ${impactLevel} برای ${selectedCurrency}...`);
     const forexData = await getForexFactoryData(impactLevel, selectedCurrency, periodQuery);
 
@@ -358,28 +202,13 @@ async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery 
     if (forexData.events.length === 0) {
       response += `هیچ رویدادی برای معیارهای انتخاب شده یافت نشد.`;
     } else {
-      let currentDate = '';
       for (const event of forexData.events) {
-        // Only show date when it changes
-        if (event.date && event.date !== currentDate) {
-          response += `\n🗓 *${event.date}*\n`;
-          currentDate = event.date;
-        }
-        
-        // Build event line
-        let eventLine = '';
-        if (event.time) {
-          eventLine += `⏰ ${event.time} `;
-        }
-        eventLine += `(${event.currency}) `;
-        eventLine += `📌 ${await translateText(event.event)}\n`;
-        
-        // Add event details
-        eventLine += `🔢 مقدار واقعی: ${event.actual} | پیش‌بینی: ${event.forecast} | قبلی: ${event.previous}\n\n`;
-        
-        response += eventLine;
+        response += `⏰ *${event.time}* (${event.currency})\n`;
+        response += `🔢 مقدار واقعی: ${event.actual} | پیش‌بینی: ${event.forecast} | قبلی: ${event.previous}\n\n`;
       }
     }
+        // response += `📌 ${await translateText(event.event)}\n`;
+
 
     await bot.editMessageText(response, {
       chat_id: chatId,
@@ -396,7 +225,7 @@ async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery 
     });
 
   } catch (error) {
-    const username = 'unknown';
+    const username = 'unknown'; // In a real scenario, you'd get this from context
     bot.sendMessage(chatId, `خطا در دریافت اطلاعات: ${error.message}`);
     
     // Log error
@@ -409,8 +238,7 @@ async function sendForexData(chatId, impactLevel, selectedCurrency, periodQuery 
   }
 }
 
-
-// Helper function for translation
+// Add this helper function for translation
 async function translateText(text) {
   try {
     if (!text || text === 'N/A') return text;
@@ -422,48 +250,10 @@ async function translateText(text) {
   }
 }
 
-// Auto-scroll function to load all data
-async function autoScroll(page) {
-  await page.evaluate(async () => {
-    await new Promise((resolve) => {
-      let totalHeight = 0;
-      const distance = 200;
-      const timer = setInterval(() => {
-        window.scrollBy(0, distance);
-        totalHeight += distance;
-
-        if (totalHeight >= document.body.scrollHeight) {
-          clearInterval(timer);
-          resolve();
-        }
-      }, 100);
-    });
-  });
-}
-
 async function getForexFactoryData(impactLevel = 'High Impact Expected', selectedCurrency, periodQuery = '') {
   let browser;
-  let proxyUrl = null;
-  let newProxyUrl = null;
-  
   try {
-    // Get a random proxy if available
-    const randomProxy = getRandomProxy();
-    if (randomProxy) {
-      proxyUrl = randomProxy;
-      newProxyUrl = await proxyChain.anonymizeProxy(proxyUrl);
-    }
-
-    // Random delay between 1-5 seconds
-    const randomDelay = Math.floor(Math.random() * 4000) + 1000;
-    console.log(randomDelay, 'ms delay before launching browser');
-    await delay(randomDelay);
-
-    // Get a random user agent
-    const randomAgent = randomUseragent.getRandom();
-    console.log('Using random user agent:', randomAgent);
-
-    const browserOptions = {
+    browser = await puppeteer.launch({
       headless: true,
       executablePath: CHROME_PATH,
       args: [
@@ -471,56 +261,19 @@ async function getForexFactoryData(impactLevel = 'High Impact Expected', selecte
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage'
       ]
-    };
-
-    // Add proxy if available
-    if (newProxyUrl) {
-      browserOptions.args.push(`--proxy-server=${newProxyUrl}`);
-    }
-
-    browser = await puppeteer.launch(browserOptions);
+    });
 
     const page = await browser.newPage();
-    
-    // Set random user agent
-    await page.setUserAgent(randomAgent);
-    
-    // Set viewport to look more like a real user
-    await page.setViewport({
-      width: 1280 + Math.floor(Math.random() * 100),
-      height: 800 + Math.floor(Math.random() * 100),
-      deviceScaleFactor: 1,
-      hasTouch: Math.random() > 0.5,
-      isLandscape: Math.random() > 0.5
-    });
-
-    // Enable stealth mode with more human-like behavior
-    await page.evaluateOnNewDocument(() => {
-      Object.defineProperty(navigator, 'webdriver', {
-        get: () => false,
-      });
-    });
+    await page.setUserAgent(
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' +
+      'AppleWebKit/537.36 (KHTML, like Gecko) ' +
+      'Chrome/114.0.0.0 Safari/537.36'
+    );
+    await page.setViewport({ width: 1280, height: 800 });
 
     const url = `https://www.forexfactory.com/calendar${periodQuery}`;
-    
-    // Random navigation delay
-    await delay(Math.floor(Math.random() * 3000));
-    
-    await page.goto(url, { 
-      waitUntil: 'networkidle2',
-      timeout: 60000 
-    });
-    
-    // Random delay before interacting with the page
-    await delay(Math.floor(Math.random() * 2000) + 1000);
-    
-    await page.waitForSelector('tr.calendar__row[data-event-id]', { timeout: 30000 });
-
-    // Trigger auto-scroll to load lazy events
-    await autoScroll(page);
-
-    // Optional extra wait for JS to finish loading all data
-    await delay(1000);
+    await page.goto(url, { waitUntil: 'networkidle2' });
+    await page.waitForSelector('tr.calendar__row[data-event-id]');
 
     const { week, events } = await page.evaluate(() => {
       const rows = Array.from(document.querySelectorAll('tr.calendar__row[data-event-id]'));
@@ -559,7 +312,6 @@ async function getForexFactoryData(impactLevel = 'High Impact Expected', selecte
     throw err;
   } finally {
     if (browser) await browser.close();
-    if (newProxyUrl) await proxyChain.closeAnonymizedProxy(newProxyUrl, true);
   }
 }
 

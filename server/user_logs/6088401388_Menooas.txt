@@ -1,0 +1,39 @@
+2025-07-01T09:33:53.879Z - /start command received
+Details: {"firstName":"Me"}
+
+2025-07-01T09:34:32.139Z - callback_query received
+Details: {"data":"technical_analysis"}
+
+2025-07-01T09:34:48.284Z - technical_analysis completed
+Details: {"output":"\r\n📊 تحلیل سیگنال در تاریخ 2025-06-13 23:45:00\r\nقیمت: 3432.56 | دامنه نوسان: 3.98\r\nاحتمال خرید: 62٪ | احتمال فروش: 25٪\r\n\r\n🧩 دلایل خرید:\r\n - 🟢 دلار ضعیف\r\n - 🟢 شاخص دلار در حال کاهش\r\n - 🟢 طلا در حال افزایش\r\n - 🟢 قیمت > میانگین متحرک\r\n - 🟢 USDCHF در حال کاهش → USD ضعیف → XAUUSD بالا\r\n\r\n🧩 دلایل فروش:\r\n - 🔴 مومنتوم منفی\r\n - 🔴 ROC منفی\r\n\r\n⚠️ هیچ سیگنال قوی یافت نشد.\r\n"}
+
+2025-07-01T09:35:24.955Z - callback_query received
+Details: {"data":"currency_USD"}
+
+2025-07-01T09:35:36.031Z - callback_query received
+Details: {"data":"impact_high_USD"}
+
+2025-07-01T09:35:36.032Z - impact level selected
+Details: {"currency":"USD","impact":"High Impact Expected"}
+
+2025-07-01T09:35:43.653Z - callback_query received
+Details: {"data":"period_today_high_USD"}
+
+2025-07-01T09:35:43.654Z - period selected
+Details: {"currency":"USD","impact":"High Impact Expected","period":"today","periodQuery":"?day=today"}
+
+2025-07-01T09:41:49.171Z - callback_query received
+Details: {"data":"currency_GBP"}
+
+2025-07-01T09:42:00.460Z - callback_query received
+Details: {"data":"impact_medium_GBP"}
+
+2025-07-01T09:42:00.461Z - impact level selected
+Details: {"currency":"GBP","impact":"Medium Impact Expected"}
+
+2025-07-01T09:42:07.185Z - callback_query received
+Details: {"data":"period_today_medium_GBP"}
+
+2025-07-01T09:42:07.186Z - period selected
+Details: {"currency":"GBP","impact":"Medium Impact Expected","period":"today","periodQuery":"?day=today"}
+

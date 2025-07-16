@@ -3,6 +3,7 @@
 
 # Server-specific
 /server/node_modules
+/server/user_logsg
 
 # Env files
 .env
@@ -14,3 +15,4 @@
 # Build artifacts
 /dist
 /build
+.save

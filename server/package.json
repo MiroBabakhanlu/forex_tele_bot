@@ -11,10 +11,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vitalets/google-translate-api": "^9.2.1",
     "axios": "^1.9.0",
     "cheerio": "^1.1.0",
+    "delay": "^6.0.0",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
-    "puppeteer-core": "^24.10.0"
+    "proxy-chain": "^2.5.9",
+    "puppeteer-core": "^24.10.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "random-useragent": "^0.5.0",
+    "user-agents": "^1.1.589"
   }
 }
