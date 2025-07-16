@@ -93,7 +93,7 @@ bot.on('callback_query', async (callbackQuery) => {
   if (data === 'technical_analysis') {
     const loadingMsg = await bot.sendMessage(chatId, 'در حال اجرای تحلیل تکنیکال...');
     
-    exec(`py technical_analysis.py`, (error, stdout, stderr) => {
+    exec(`python technical_analysis.py`, (error, stdout, stderr) => {
       if (error) {
         console.error(`Execution error: ${error.message}`);
         logUserActivity(chatId, username, 'technical_analysis error', {
