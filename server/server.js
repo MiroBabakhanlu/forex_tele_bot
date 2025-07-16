@@ -90,6 +90,7 @@ bot.on('callback_query', async (callbackQuery) => {
     data: data
   });
 
+  //random change
   if (data === 'technical_analysis') {
     const loadingMsg = await bot.sendMessage(chatId, 'در حال اجرای تحلیل تکنیکال...');
     
